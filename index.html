@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form>
+        <label>Nombre del Producto:</label>
+        <input type="text" id="Nombre" required>
+        <br>
+        <label>Categoria:</label>
+        <select name="Categoria" id="Categoria" required>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+        <br>
+        <label>Precio Unitario:</label>
+        <input type="number" id="PrecioU" required min="1">
+        <br>
+        <label>Unidades:</label>
+        <input type="number" id="Unidades" required min="1">
+        <br>
+        <label>Descuento:</label>
+        <input type="number" id="Descuento" required min="1"> 
+        <br>
+        <input type="submit" id="Enviar">
+    </form>
+    <br>
+    <table border="3px">
+        <thead>    
+            <th>Nombre del Producto</th>
+            <th>Categoria</th>
+            <th>Unidades</th>
+            <th>Precio Unitario</th>
+            <th>Precio</th>
+            <th>Descuento %</th>
+            <th>Valor del descuento</th>
+            <th>Total</th>
+        </thead>
+        <tbody>
+            <div id="table"></div>
+        </tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
